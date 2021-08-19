@@ -12,10 +12,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +35,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^6.2.0",
+    "autoprefixer": "9",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "postcss": "7",
+    "prettier": "2.3.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
