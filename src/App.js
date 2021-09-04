@@ -1,5 +1,5 @@
 import "./App.css";
-import TheLayout from "./layout/TheLayout.jsx";
+import TheLayout from "./layout/TheLayout";
 
 function App() {
   return (
